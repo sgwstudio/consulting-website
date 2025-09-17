@@ -2,31 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
-.animation-move-right {
-  animation: move-right 1s ease-in-out infinite;
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
 }
 
-@keyframes move-right {
-  0% {
-    transform: translateX(0);
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now ExtraLight Italic.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now Light Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now SemiLight.otf') format('opentype');
+  font-weight: 350;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now SemiLight Italic.otf') format('opentype');
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now SemiBold Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now Bold Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JHA Times Now';
+  src: url('../font/Times Now ExtraBold Italic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-  50% {
-    transform: translateX(1px);
+  
+  body {
+    font-family: 'Playfair Display', serif;
   }
-  100% {
-    transform: translateX(0);
+  
+  /* Fixed header styling */
+  header {
+    transition: all 0.3s ease;
+  }
+  
+  /* Smooth scrolling offset for fixed header */
+  section[id] {
+    scroll-margin-top: 6rem;
   }
 }
 
-.top-03px {
-  top: 0.3px;
-}
-
-.image {
-  width: 100%;
-  height: 500px;
-  background-image: url('https://images.pexels.com/photos/247676/pexels-photo-247676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@layer utilities {
+  .bg-warm-white {
+    background-color: #fafaf9;
+  }
+  
+  .text-black {
+    color: #0c0a09;
+  }
+  
+  .text-warm-gray {
+    color: #44403c;
+  }
+  
+  .text-light-gray {
+    color: #78716c;
+  }
+  
+  .text-medium-gray {
+    color: #57534e;
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-jha-times {
+    font-family: 'JHA Times Now', serif;
+  }
 }

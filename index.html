@@ -3,153 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Marina Strigari</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/fb89be9943.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-  <body class="relative container mx-auto">
+  <body class="min-h-screen bg-stone-50 font-jha-times">
     <!-- Header -->
-    <header class="container flex justify-between mb-20 px-4 py-2 pt-4">
-      <!-- Logo -->
-      <a href="#">
-        <img class="w-10 hover:opacity-90" src="img/logo.png" alt="logo" />
+    <header class="fixed top-0 left-0 right-0 bg-stone-50 z-50">
+      <div class="flex justify-between items-center px-8 py-6">
+      <!-- Logo/Name -->
+      <a href="#" class="text-3xl font-semibold text-stone-900">
+        Marina Strigari
       </a>
 
-      <!-- Header Menu -->
-      <nav class="flex items-center text-slate-700 text-xs font-medium">
-        <a class="mr-6 hover:text-slate-600 sm:hidden" href="#about"
-          >About Us</a
-        >
-        <ul class="hidden sm:flex">
-          <li>
-            <a class="mr-6 hover:text-slate-600" href="#about">About Us</a>
-          </li>
-          <li>
-            <a class="mr-6 hover:text-slate-600" href="#">Services</a>
-          </li>
-          <li>
-            <a class="mr-6 hover:text-slate-600" href="#">Products</a>
-          </li>
-        </ul>
-
-        <a
-          href="#contact"
-          class="rounded-full border border-slate-700 px-4 py-2 hover:bg-slate-700 hover:text-white transition-all duration-200 ease-in-out"
-        >
-          Contact Us
-          <i
-            class="fa-solid fa-angles-right animation-move-right relative top-03px"
-          ></i>
-        </a>
+      <!-- Navigation -->
+      <nav class="flex items-center space-x-8">
+        <a href="#services" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Services</a>
+        <a href="#about" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">About</a>
+        <a href="#expertise" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Expertise</a>
+        <a href="#contact" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Contact</a>
       </nav>
+      </div>
     </header>
 
-    <!-- Main -->
-    <main>
-      <!-- Hero -->
-      <section
-        class="hero px-4 mb-20 container flex-col justify-between items-center sm:flex sm:flex-row xl:justify-center"
-      >
-        <h1 class="font-bold text-5xl text-slate-800 max-w-sm mb-10 lg:mr-48">
-          World-class consulting firm <span class="text-blue-600">.</span>
-        </h1>
-        <div>
-          <p class="max-w-xs mb-10 text-s text-slate-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quae,
-            adipisci ea consectetur deleniti velit necessitatibus voluptatem
-            ducimus neque eveniet.
-          </p>
-          <a class="font-bold text-s text-blue-600" href="#">See Services</a>
+    <!-- Main Content -->
+    <main class="px-8 pt-24">
+      <!-- Hero Section -->
+      <section class="min-h-screen flex items-center justify-center -mt-20">
+        <div class="text-center max-w-4xl px-4">
+                <h1 class="text-6xl font-light text-stone-900 italic" style="line-height: 66px;">
+            I'm a global merchandising and product development director with over 15 years of experience at 
+            <a href="https://www.gucci.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Gucci</a>, 
+            <a href="https://www.lanvin.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Lanvin</a>, 
+            <a href="https://www.chloe.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Chloé</a>, 
+            <a href="https://www.vans.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Vans</a>, and 
+            <a href="https://www.jacquesmariemage.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Jacques Marie Mage</a>.
+          </h1>
         </div>
-      </section>
-
-      <!-- Dark Section 1 -->
-      <section class="container justify-between bg-black md:flex">
-        <div
-          class="flex justify-center items-center flex-col text-center py-20 px-20 w-full md:w-1/2"
-        >
-          <img
-            class="w-24 mb-3 hover:opacity-90"
-            src="img/logo.png"
-            alt="logo"
-          />
-          <h3 class="text-slate-200 font-bold text-2xl max-w-xs">
-            A new, groundbreaking consulting system
-          </h3>
-        </div>
-        <div class="w-full md:w-1/2 image"></div>
       </section>
 
       <!-- Divider -->
-      <div class="container h-16 bg-slate-200"></div>
+      <div class="flex justify-center py-16 -mt-16">
+        <div class="text-stone-900 text-4xl font-thin tracking-widest">⁂</div>
+      </div>
 
-      <!-- About Us Section -->
-      <section
-        id="about"
-        class="px-4 mt-40 mb-20 container w-full flex justify-center items-center"
-      >
-        <div>
-          <h5 class="font-bold text-s text-blue-600 mb-3">About Us</h5>
-          <p class="font-bold text-3xl text-slate-800 max-w-4xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit cumque
-            animi commodi odio cum nostrum facilis,
-            <span class="text-slate-500">
-              voluptates hic consectetur exercitationem doloremque adipisci
-            </span>
-          </p>
+      <!-- Services Section -->
+      <section id="services" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-6xl font-normal text-stone-900 mb-16 text-center">Services</h2>
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Collection Merchandising</h3>
+              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
+                <li>— Optimizing product assortment, pricing, and sales performance</li>
+                <li>— Developing collection plans based on market trends and business goals</li>
+                <li>— Crafting region-specific assortments for global markets</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Market Analysis & Trend Forecasting</h3>
+              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
+                <li>— Competitor benchmarking and industry insights to inform strategy</li>
+                <li>— Vintage sourcing for inspiration and storytelling</li>
+                <li>— Creation of tailored mood boards and creative references</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Product Line Development</h3>
+              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
+                <li>— End-to-end guidance for new product categories, from concept to launch</li>
+                <li>— Expertise in Jewelry, Leather Goods, Apparel, and Footwear</li>
+              </ul>
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Cross-Functional Collaboration</h3>
+              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
+                <li>— Leading teams across design, merchandising, and sales</li>
+                <li>— Facilitating alignment between creative and commercial functions</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Call To Action -->
-      <section
-        id="contact"
-        class="bg-blue-600 px-4 py-20 mb-10 w-full justify-center sm:flex sm:justify-between xl:px-48"
-      >
-        <form class="mb-10 max-w-sm mr-20 w-full sm:w-1/2">
-          <input
-            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-            type="text"
-            placeholder="Name"
-          />
-          <input
-            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-            type="email"
-            placeholder="Email"
-          />
-          <input
-            class="py-2 bg-blue-600 text-blue-100 placeholder-blue-200 text-xs border-b border-blue-200 outline-none mb-6 w-full"
-            type="text"
-            placeholder="Message"
-          />
-          <button
-            class="px-4 py-3 bg-blue-50 text-slate-700 text-xs rounded-full border-none shadow-md shadow-blue-700 hover:bg-white transition-all duration-200 ease-in-out"
-          >
-            Send Message
-            <i
-              class="fa-solid fa-angles-right animation-move-right relative top-03px"
-            ></i>
-          </button>
-        </form>
-        <div>
-          <h2 class="mb-4 text-blue-50 font-semibold text-3xl max-w-xs">
-            We are always ready to hear you 24/7
-          </h2>
-          <p class="text-blue-200 text-xs max-w-xs leading-5">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus, fugiat nulla!
-          </p>
+      <!-- Divider -->
+      <div class="flex justify-center py-16 -mt-16">
+        <div class="text-stone-900 text-4xl font-thin tracking-widest">⁂</div>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="text-6xl font-normal text-stone-900 mb-12 text-center">About</h2>
+          <div class="space-y-6 text-stone-600 text-xl" style="line-height: 26px;">
+            <p>
+              I'm a Freelance Merchandising & Product Strategy Consultant based in Los Angeles, with over fifteen years of experience shaping luxury and global lifestyle brands. I specialize in building merchandising strategies that drive growth across product assortment, new category development, design consulting, and vintage sourcing, while ensuring brands meet both consumer needs and business goals.
+            </p>
+            <p>
+              Most recently, I led the New Product Categories unit at Jacques Marie Mage, overseeing Jewelry and Leather Goods from design inception through to sales execution. Previously, I directed assortments for Vans' Women's & Kids Footwear and Apparel across the Americas, managed global retail merchandising at Chloé, and bought accessories collections at Lanvin.
+            </p>
+            <p>
+              With expertise in product strategy, market analysis, and trend forecasting, I help brands create collections that resonate across diverse global markets. Fluent in English, French, and Italian, I bring cultural fluency and strategic focus to every project.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Areas of Expertise Section -->
+      <section id="expertise" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-4xl mx-auto px-4">
+          <h2 class="text-6xl font-normal text-stone-900 mb-12 text-center">Areas of Expertise</h2>
+          <div class="text-center">
+            <p class="text-stone-600 text-xl" style="line-height: 26px;">
+              Buying · Merchandising · Product Strategy · Trend Forecasting · Assortment Building · Pricing Strategy · Inventory Management · Product Development · Creative Direction
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; margin-top: -100px;">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-6xl font-normal text-stone-900 mb-8">Contact</h2>
+          <div class="grid grid-cols-2 gap-8 text-xl">
+            <div class="text-right">
+              <span class="text-stone-900">Mail</span>
+            </div>
+            <div class="text-left">
+              <a href="mailto:marinastrigari@gmail.com" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200">
+                marinastrigari@gmail.com
+              </a>
+            </div>
+            <div class="text-right">
+              <span class="text-stone-900">LinkedIn</span>
+            </div>
+            <div class="text-left">
+              <a href="https://www.linkedin.com/in/marina-strigari-2505b717/" target="_blank" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200">
+                Marina Strigari
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="px-4 py-7 text-slate-600 text-xs text-center">
-      <hr class="opacity-40 pb-7" />
-      <p>&copy; <span id="footerDate"></span> All Rights Reserved</p>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-stone-600 text-sm">
+      <p>&copy; <span id="footerDate"></span> Marina Strigari. All rights reserved.</p>
     </footer>
+
     <script>
-      document.getElementById('footerDate').innerHTML = new Date().getFullYear()
+      document.getElementById('footerDate').innerHTML = new Date().getFullYear();
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const href = this.getAttribute('href');
+          
+          if (href === '#') {
+            // Scroll to top for homepage link
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          } else {
+            // Scroll to specific section
+            const target = document.querySelector(href);
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }
+        });
+      });
     </script>
   </body>
 </html>
