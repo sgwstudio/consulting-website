@@ -594,6 +594,10 @@ section[id] {
   height: 1.5rem;
 }
 
+.h-px {
+  height: 1px;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -604,6 +608,10 @@ section[id] {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-5 {
@@ -620,6 +628,10 @@ section[id] {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-1 {
@@ -658,18 +670,6 @@ section[id] {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-1 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -678,6 +678,10 @@ section[id] {
 
 .break-all {
   word-break: break-all;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-t {
@@ -696,6 +700,11 @@ section[id] {
 .bg-stone-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 249 / var(--tw-bg-opacity));
+}
+
+.bg-stone-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 211 209 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -756,14 +765,9 @@ section[id] {
   line-height: 2.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -777,10 +781,6 @@ section[id] {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .font-normal {
@@ -801,10 +801,6 @@ section[id] {
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .text-stone-900 {
@@ -847,8 +843,20 @@ section[id] {
   transition-duration: 150ms;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .font-jha-times {
@@ -1034,12 +1042,6 @@ section[id] {
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
-  .md\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-  }
-
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1079,19 +1081,9 @@ section[id] {
     line-height: 1;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-xl {
