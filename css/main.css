@@ -436,7 +436,16 @@ header {
 /* Smooth scrolling offset for fixed header */
 
 section[id] {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 0;
+  padding-top: 2.5rem;
+  /* 40px - positions section title at bottom of mobile nav */
+}
+
+@media (min-width: 768px) {
+  section[id] {
+    padding-top: 5rem;
+    /* 80px - adjusted for desktop header height */
+  }
 }
 
 *, ::before, ::after {
@@ -733,13 +742,8 @@ section[id] {
   padding-bottom: 2rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
+.pb-16 {
   padding-bottom: 4rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-center {
@@ -1067,13 +1071,8 @@ section[id] {
     padding-bottom: 4rem;
   }
 
-  .md\:py-32 {
-    padding-top: 8rem;
+  .md\:pb-32 {
     padding-bottom: 8rem;
-  }
-
-  .md\:pt-24 {
-    padding-top: 6rem;
   }
 
   .md\:text-3xl {
