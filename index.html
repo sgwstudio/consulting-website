@@ -9,97 +9,109 @@
   <body class="min-h-screen bg-stone-50 font-jha-times">
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 bg-stone-50 z-50">
-      <div class="flex justify-between items-center px-8 py-6">
-      <!-- Logo/Name -->
-      <a href="#" class="text-3xl font-semibold text-stone-900">
-        Marina Strigari
-      </a>
+      <div class="flex justify-between items-center px-4 md:px-8 py-4 md:py-6">
+        <!-- Logo/Name -->
+        <a href="#" class="text-2xl md:text-3xl font-semibold text-stone-900">
+          Marina Strigari
+        </a>
 
-      <!-- Navigation -->
-      <nav class="flex items-center space-x-8">
-        <a href="#services" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Services</a>
-        <a href="#about" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">About</a>
-        <a href="#expertise" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Expertise</a>
-        <a href="#contact" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-xl">Contact</a>
-      </nav>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-stone-900 hover:text-red-500 transition-colors duration-200">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <a href="#services" class="text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg lg:text-xl">Services</a>
+          <a href="#about" class="text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg lg:text-xl">About</a>
+          <a href="#expertise" class="text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg lg:text-xl">Expertise</a>
+          <a href="#contact" class="text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg lg:text-xl">Contact</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-stone-50 border-t border-stone-200">
+        <nav class="px-4 py-6 space-y-4">
+          <a href="#services" class="block text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg py-2">Services</a>
+          <a href="#about" class="block text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg py-2">About</a>
+          <a href="#expertise" class="block text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg py-2">Expertise</a>
+          <a href="#contact" class="block text-stone-900 hover:text-red-500 hover:underline decoration-1 underline-offset-4 transition-all duration-200 text-lg py-2">Contact</a>
+        </nav>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main class="px-8 pt-24">
+    <main class="px-4 md:px-8 pt-20 md:pt-24">
       <!-- Hero Section -->
-      <section class="min-h-screen flex items-center justify-center -mt-20">
-        <div class="text-center max-w-4xl px-4">
-                <h1 class="text-6xl font-light text-stone-900 italic" style="line-height: 66px;">
-            I'm a global merchandising and product development director with over 15 years of experience at 
-            <a href="https://www.gucci.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Gucci</a>, 
-            <a href="https://www.lanvin.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Lanvin</a>, 
-            <a href="https://www.chloe.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Chloé</a>, 
-            <a href="https://www.vans.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Vans</a>, and 
-            <a href="https://www.jacquesmariemage.com" target="_blank" class="text-stone-900 hover:text-stone-600 transition-colors duration-200 underline decoration-1 underline-offset-4">Jacques Marie Mage</a>.
+      <section class="min-h-screen flex items-center justify-center -mt-16 md:-mt-20">
+        <div class="text-center max-w-4xl px-2 md:px-4">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-stone-900 italic leading-tight md:leading-tight" style="line-height: 1.1;">
+            I'm a global merchandising director with over 15 years of experience at 
+            <a href="https://www.gucci.com" target="_blank" class="text-stone-900 hover:text-red-500 transition-colors duration-200 underline decoration-1 underline-offset-4">Gucci</a>, 
+            <a href="https://www.lanvin.com" target="_blank" class="text-stone-900 hover:text-red-500 transition-colors duration-200 underline decoration-1 underline-offset-4">Lanvin</a>, 
+            <a href="https://www.chloe.com" target="_blank" class="text-stone-900 hover:text-red-500 transition-colors duration-200 underline decoration-1 underline-offset-4">Chloé</a>, 
+            <a href="https://www.vans.com" target="_blank" class="text-stone-900 hover:text-red-500 transition-colors duration-200 underline decoration-1 underline-offset-4">Vans</a>, and 
+            <a href="https://www.jacquesmariemage.com" target="_blank" class="text-stone-900 hover:text-red-500 transition-colors duration-200 underline decoration-1 underline-offset-4">Jacques Marie Mage</a>.
           </h1>
         </div>
       </section>
 
       <!-- Divider -->
-      <div class="flex justify-center py-16 -mt-16">
-        <div class="text-stone-900 text-4xl font-thin tracking-widest">⁂</div>
+      <div class="flex justify-center py-8 md:py-16 -mt-8 md:-mt-16">
+        <div class="text-stone-900 text-3xl md:text-4xl font-thin tracking-widest">—</div>
       </div>
 
       <!-- Services Section -->
-      <section id="services" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
-        <div class="max-w-6xl mx-auto px-4">
-          <h2 class="text-6xl font-normal text-stone-900 mb-16 text-center">Services</h2>
-          <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Collection Merchandising</h3>
-              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
-                <li>— Optimizing product assortment, pricing, and sales performance</li>
-                <li>— Developing collection plans based on market trends and business goals</li>
-                <li>— Crafting region-specific assortments for global markets</li>
+      <section id="services" class="py-16 md:py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-6xl mx-auto px-2 md:px-4">
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-stone-900 mb-8 md:mb-16 text-center">Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <div class="space-y-4 md:space-y-6">
+              <h3 class="text-xl md:text-2xl font-medium text-stone-900 leading-tight">Collection Merchandising</h3>
+              <ul class="text-stone-600 space-y-2 text-sm md:text-base" style="line-height: 18px;">
+                <li>• Optimizing product assortment, pricing, and sales performance</li>
+                <li>• Developing collection plans based on market trends and business goals</li>
+                <li>• Crafting region-specific assortments for global markets</li>
               </ul>
             </div>
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Market Analysis & Trend Forecasting</h3>
-              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
-                <li>— Competitor benchmarking and industry insights to inform strategy</li>
-                <li>— Vintage sourcing for inspiration and storytelling</li>
-                <li>— Creation of tailored mood boards and creative references</li>
+            <div class="space-y-4 md:space-y-6">
+              <h3 class="text-xl md:text-2xl font-medium text-stone-900 leading-tight">Market Analysis & Trend Forecasting</h3>
+              <ul class="text-stone-600 space-y-2 text-sm md:text-base" style="line-height: 18px;">
+                <li>• Competitor benchmarking and industry insights to inform strategy</li>
+                <li>• Vintage sourcing for inspiration and storytelling</li>
+                <li>• Creation of tailored mood boards and creative references</li>
               </ul>
             </div>
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Product Line Development</h3>
-              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
-                <li>— End-to-end guidance for new product categories, from concept to launch</li>
-                <li>— Expertise in Jewelry, Leather Goods, Apparel, and Footwear</li>
+            <div class="space-y-4 md:space-y-6">
+              <h3 class="text-xl md:text-2xl font-medium text-stone-900 leading-tight">Product Line Development</h3>
+              <ul class="text-stone-600 space-y-2 text-sm md:text-base" style="line-height: 18px;">
+                <li>• End-to-end guidance for new product categories, from concept to launch</li>
+                <li>• Expertise in Jewelry, Leather Goods, Apparel, and Footwear</li>
               </ul>
             </div>
-            <div class="space-y-6">
-              <h3 class="text-2xl font-medium text-stone-900 leading-tight">Cross-Functional Collaboration</h3>
-              <ul class="text-stone-600 space-y-2 text-base" style="line-height: 18px;">
-                <li>— Leading teams across design, merchandising, and sales</li>
-                <li>— Facilitating alignment between creative and commercial functions</li>
+            <div class="space-y-4 md:space-y-6">
+              <h3 class="text-xl md:text-2xl font-medium text-stone-900 leading-tight">Cross-Functional Collaboration</h3>
+              <ul class="text-stone-600 space-y-2 text-sm md:text-base" style="line-height: 18px;">
+                <li>• Leading teams across design, merchandising, and sales</li>
+                <li>• Facilitating alignment between creative and commercial functions</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Divider -->
-      <div class="flex justify-center py-16 -mt-16">
-        <div class="text-stone-900 text-4xl font-thin tracking-widest">⁂</div>
-      </div>
-
       <!-- About Section -->
-      <section id="about" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
-        <div class="max-w-4xl mx-auto px-4">
-          <h2 class="text-6xl font-normal text-stone-900 mb-12 text-center">About</h2>
-          <div class="space-y-6 text-stone-600 text-xl" style="line-height: 26px;">
+      <section id="about" class="py-16 md:py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-4xl mx-auto px-2 md:px-4">
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-stone-900 mb-8 md:mb-12 text-center">About</h2>
+          <div class="space-y-4 md:space-y-6 text-stone-600 text-base md:text-xl" style="line-height: 1.3;">
             <p>
               I'm a Freelance Merchandising & Product Strategy Consultant based in Los Angeles, with over fifteen years of experience shaping luxury and global lifestyle brands. I specialize in building merchandising strategies that drive growth across product assortment, new category development, design consulting, and vintage sourcing, while ensuring brands meet both consumer needs and business goals.
             </p>
             <p>
-              Most recently, I led the New Product Categories unit at Jacques Marie Mage, overseeing Jewelry and Leather Goods from design inception through to sales execution. Previously, I directed assortments for Vans' Women's & Kids Footwear and Apparel across the Americas, managed global retail merchandising at Chloé, and bought accessories collections at Lanvin.
+              Most recently, I led the New Product Categories unit at Jacques Marie Mage, overseeing jewelry and leather goods from design inception, sourcing, and development through sales execution. Previously, I crafted assortments for Vans' women's and kids' footwear and apparel across the Americas, managed global retail merchandising at Chloé, and bought accessory collections for Lanvin.
             </p>
             <p>
               With expertise in product strategy, market analysis, and trend forecasting, I help brands create collections that resonate across diverse global markets. Fluent in English, French, and Italian, I bring cultural fluency and strategic focus to every project.
@@ -109,35 +121,36 @@
       </section>
 
       <!-- Areas of Expertise Section -->
-      <section id="expertise" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
-        <div class="max-w-4xl mx-auto px-4">
-          <h2 class="text-6xl font-normal text-stone-900 mb-12 text-center">Areas of Expertise</h2>
+      <section id="expertise" class="py-16 md:py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+        <div class="max-w-4xl mx-auto px-2 md:px-4">
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-stone-900 mb-8 md:mb-12 text-center">Areas of Expertise</h2>
           <div class="text-center">
-            <p class="text-stone-600 text-xl" style="line-height: 26px;">
-              Buying · Merchandising · Product Strategy · Trend Forecasting · Assortment Building · Pricing Strategy · Inventory Management · Product Development · Creative Direction
+            <p class="text-stone-600 text-base md:text-xl leading-relaxed">
+              Buying • Merchandising • Product Strategy • Trend Forecasting • Assortment Building • Pricing Strategy • Inventory Management • Product Development • Creative Direction
             </p>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; margin-top: -100px;">
-        <div class="max-w-2xl mx-auto text-center">
-          <h2 class="text-6xl font-normal text-stone-900 mb-8">Contact</h2>
-          <div class="grid grid-cols-2 gap-8 text-xl">
-            <div class="text-right">
-              <span class="text-stone-900">Mail</span>
-            </div>
-            <div class="text-left">
-              <a href="mailto:marinastrigari@gmail.com" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200">
+      <section id="contact" class="py-16 md:py-32" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; margin-top: -50px;">
+        <div class="max-w-2xl mx-auto text-center px-2 md:px-4">
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-normal text-stone-900 mb-6 md:mb-8">Contact</h2>
+          <div class="space-y-4 text-lg md:text-xl">
+            <div class="text-center">
+              <a href="mailto:marinastrigari@gmail.com" class="text-stone-900 hover:text-red-500 underline decoration-1 underline-offset-4 transition-all duration-200 break-all flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 156 156" stroke-width="5" stroke-linecap="round">
+                  <path d="M19.5 52L70.785 79.69C72.9213 81.1153 75.4319 81.8759 78 81.8759C80.5681 81.8759 83.0787 81.1153 85.215 79.69L136.5 52M32.5 123.5H123.5C126.948 123.5 130.254 122.13 132.692 119.692C135.13 117.254 136.5 113.948 136.5 110.5V45.5C136.5 42.0522 135.13 38.7456 132.692 36.3076C130.254 33.8696 126.948 32.5 123.5 32.5H32.5C29.0522 32.5 25.7456 33.8696 23.3076 36.3076C20.8696 38.7456 19.5 42.0522 19.5 45.5V110.5C19.5 113.948 20.8696 117.254 23.3076 119.692C25.7456 122.13 29.0522 123.5 32.5 123.5Z"></path>
+                </svg>
                 marinastrigari@gmail.com
               </a>
             </div>
-            <div class="text-right">
-              <span class="text-stone-900">LinkedIn</span>
-            </div>
-            <div class="text-left">
-              <a href="https://www.linkedin.com/in/marina-strigari-2505b717/" target="_blank" class="text-stone-900 hover:underline decoration-1 underline-offset-4 transition-all duration-200">
+            <div class="text-center">
+              <a href="https://www.linkedin.com/in/marina-strigari-2505b717/" target="_blank" class="text-stone-900 hover:text-red-500 underline decoration-1 underline-offset-4 transition-all duration-200 flex items-center justify-center gap-2">
+                <svg class="w-5 h-5 text-stone-600" fill="none" stroke="currentColor" viewBox="0 0 123 123" stroke-width="5">
+                  <path d="M105.995 103H88.8191V76.0433C88.8191 69.6151 88.6886 61.3427 79.8686 61.3427C70.9132 61.3427 69.5455 68.3372 69.5455 75.5689V103H52.3695V47.5666H68.8689V55.1226H69.0912C71.3965 50.7662 77.0027 46.1677 85.3781 46.1677C102.781 46.1677 106 57.6397 106 72.5726L105.995 103ZM32.9702 39.9816C27.4414 39.9816 23 35.4993 23 29.9859C23 24.4775 27.4463 20 32.9702 20C38.4797 20 42.9453 24.4775 42.9453 29.9859C42.9453 35.4993 38.4749 39.9816 32.9702 39.9816ZM41.5825 103H24.358V47.5666H41.5825V103Z" fill="currentColor"/>
+                  <path d="M108.75 3H14.75C8.26065 3 3 8.26065 3 14.75V108.75C3 115.239 8.26065 120.5 14.75 120.5H108.75C115.239 120.5 120.5 115.239 120.5 108.75V14.75C120.5 8.26065 115.239 3 108.75 3Z" stroke="currentColor" stroke-width="5"/>
+                </svg>
                 Marina Strigari
               </a>
             </div>
@@ -153,6 +166,21 @@
 
     <script>
       document.getElementById('footerDate').innerHTML = new Date().getFullYear();
+      
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      });
       
       // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
